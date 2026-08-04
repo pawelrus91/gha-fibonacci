@@ -4,6 +4,6 @@ on: [push]
 jobs: 
   Base-Actions:
     runs-on: ubuntu-latest
-      jobs: 
-        - run: echo "Action test 1"
-        - run: echo "Action test 2"
+    steps: 
+      - run: echo "Action test 1"
+      - run: echo "Action test 2"
