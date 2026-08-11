@@ -1,0 +1,9 @@
+name: CI test
+run-name: This is Run name
+on: [push]
+jobs:
+  Some-Job:
+    runs-on: ubuntu-latest
+    steps: 
+      - run: Run 1
+      - run: Run 2
