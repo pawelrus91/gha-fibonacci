@@ -5,5 +5,5 @@ jobs:
   Some-Job:
     runs-on: ubuntu-latest
     steps: 
-      - run: Run 1
-      - run: Run 2
+      - run: echo "Run 1 Step"
+      - run: echo "Run 2 Step"
