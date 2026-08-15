@@ -37,5 +37,11 @@ jobs:
         run: poetry install
         if: steps.poetry_cache.outputs.cache-hit != 'true'
 
+      - name: Linting code
+        run: poetry run ruff check
+
+      - name: Format code
+        run: poetry run ruff format
+
       - name: Test with PyTest
         run: poetry run pytest
