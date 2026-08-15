@@ -1,5 +1,6 @@
-import pytest
 import types
+
+import pytest
 
 from src.gha_fibonacci.fibonacci import fibonacci
 
@@ -19,10 +20,10 @@ testdata = [
     (9, 34),
     (10, 55),
     (11, 89),
-    (12, 144)
+    (12, 144),
 ]
 
 
-@pytest.mark.parametrize('n,excepted', testdata)
+@pytest.mark.parametrize("n,excepted", testdata)
 def test_should_fibonacci_expected_value(n: int, excepted: int) -> None:
     assert fibonacci(n) == excepted
