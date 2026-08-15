@@ -1,4 +1,5 @@
 name: Unit tests using poetry and PyTest
+run-name: Run PyTest by Poetry 
 
 on: [push]
 
